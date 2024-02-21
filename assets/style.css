@@ -4,7 +4,6 @@
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 :root{
     --primary:#083b4c;
     --light-number:#1389b2;
@@ -12,18 +11,16 @@
     --buzz--color:#ffd166;
     --fizzbuzz--color: #f0466f;
 }
-
 h1{
     text-align: center;
     font-size: 80px;
-    margin-bottom: 0px;
+    color: white;
 }
 body{
     background-color: var(--primary);  
-    color: white;
+    color: black;
 }
-.container{
-   
+.container{  
     max-width: 1200px;
     margin: auto;
 }
@@ -31,8 +28,7 @@ ul{
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    
+    gap: 20px;   
 }
 
 li{
@@ -43,6 +39,7 @@ li{
     align-items: center;
     justify-content: center;
     background-color: var(--light-number);
+    border-radius: 10px;
 }
 
 .fizz{

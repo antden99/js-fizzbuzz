@@ -17,6 +17,7 @@ for(let i=1;i<=100;i++){
         valore = "fizz";
         classe = "fizz";
     } //controllo se il numero è multiplo di 5
+    
     else if (i % 5 === 0){
         console.log(i + " è un multiplo 5");
         valore = "buzz";
