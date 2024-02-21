@@ -16,7 +16,8 @@ for(let i=1;i<=100;i++){
         console.log(i + " è un multiplo 3");
         valore = "fizz";
         classe = "fizz";
-    } else if (i % 5 === 0){
+    } //controllo se il numero è multiplo di 5
+    else if (i % 5 === 0){
         console.log(i + " è un multiplo 5");
         valore = "buzz";
         classe = "buzz";
@@ -25,7 +26,10 @@ for(let i=1;i<=100;i++){
     if((i % 3 === 0) && (i % 5 === 0)){
         console.log(i + " è un multiplo di 3 e di 5");
         valore = "fizzbuzz";
-        classe = "buzz";
+        classe = "fizzbuzz";
     }
+
+    /*stampo nel documento un <li> per volta a cui cambio la classe ed il valore all'interno se 
+    vengono rispettati determinati requisiti */
     listElement.insertAdjacentHTML("beforeend",`<li class="${classe}">${valore}</li>`);
 }
