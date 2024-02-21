@@ -11,8 +11,16 @@ for(let i=1;i<=100;i++){
     let valore = i;
     let classe = "box";
     
-    //creo un if che controlla se il numero è un multiplo di 3
-    if (i % 3 === 0){
+
+    
+    //creo un if che controlla se il numero è un multiplo di 3 e di 5
+    if((i % 3 === 0) && (i % 5 === 0)){
+        console.log(i + " è un multiplo di 3 e di 5");
+        valore = "fizzbuzz";
+        classe = "fizzbuzz";
+    } 
+    //creo un else if che controlla se il numero è un multiplo di 3
+    else if (i % 3 === 0){
         console.log(i + " è un multiplo 3");
         valore = "fizz";
         classe = "fizz";
@@ -23,12 +31,6 @@ for(let i=1;i<=100;i++){
         valore = "buzz";
         classe = "buzz";
     } 
-    // controllo se il numero è un multiplo di 3 e di 5
-    if((i % 3 === 0) && (i % 5 === 0)){
-        console.log(i + " è un multiplo di 3 e di 5");
-        valore = "fizzbuzz";
-        classe = "fizzbuzz";
-    }
 
     /*stampo nel documento un <li> per volta a cui cambio la classe ed il valore all'interno se 
     vengono rispettati determinati requisiti */
