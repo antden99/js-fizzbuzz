@@ -1,12 +1,10 @@
-.container{
-    width: 80%;
-    margin: auto;
-    max-width: 100px;
-    background-color: aquamarine;
+body{
+    background-color: #083b4c;
 }
 ul{
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
 }
 li{
     width: 100px;
