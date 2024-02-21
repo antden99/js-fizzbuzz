@@ -1,6 +1,8 @@
 :root{
     --primary:#083b4c;
     --light-number:#1389b2;
+    --fizz--color:#0cd6a1;
+    --buzz--color:#ffd166;
 }
 
 h1{
